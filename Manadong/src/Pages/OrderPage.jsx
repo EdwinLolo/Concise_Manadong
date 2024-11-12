@@ -2,14 +2,16 @@ import React from "react";
 
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import AboutUsInfo from "../Components/AboutUsInfo";
+import Order from "../Components/Order";
 
-export default function AboutUs() {
+function OrderPage() {
   return (
     <div>
       <Navbar />
-      <AboutUsInfo />
+      <Order />
       <Footer />
     </div>
   );
 }
+
+export default OrderPage;

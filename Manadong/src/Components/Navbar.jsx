@@ -6,30 +6,30 @@ function Navbar() {
     <nav className="block w-full px-6 py-2 mx-auto text-white bg-[#004687] lg:px-8 lg:py-3">
       <div className="container flex flex-wrap items-center justify-between mx-auto text-white">
         <a
-          href="#"
-          className="block cursor-pointer text-base text-white font-semibold"
+          href="/"
+          className="block text-base font-semibold text-white cursor-pointer"
         >
           <img src={Logo} />
         </a>
         <div className="hidden lg:block">
           <ul className="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-            <li className="flex items-center p-1 text-sm gap-x-2 text-white">
-              <a href="#" className="flex items-center">
+            <li className="flex items-center p-1 text-sm text-white gap-x-2">
+              <a href="/" className="flex items-center">
                 Home
               </a>
             </li>
-            <li className="flex items-center p-1 text-sm gap-x-2 text-white">
+            <li className="flex items-center p-1 text-sm text-white gap-x-2">
               <a href="#" className="flex items-center">
                 Eatery
               </a>
             </li>
-            <li className="flex items-center p-1 text-sm gap-x-2 text-white">
+            <li className="flex items-center p-1 text-sm text-white gap-x-2">
               <a href="#" className="flex items-center">
                 News
               </a>
             </li>
-            <li className="flex items-center p-1 text-sm gap-x-2 text-white">
-              <a href="#" className="flex items-center">
+            <li className="flex items-center p-1 text-sm text-white gap-x-2">
+              <a href="/about" className="flex items-center">
                 About Us
               </a>
             </li>

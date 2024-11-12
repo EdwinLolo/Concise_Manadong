@@ -3,6 +3,29 @@ import React from "react";
 // Import Image
 import Promo1 from "../assets/Assets_Manadong/Promotion_1.jpg";
 
+const promotions = [
+  {
+    title: "Buy 2 Get 1",
+    description: "Buy 2 and get 1 free, applicable to select variants.",
+    imgSrc: Promo1,
+    alt: "Buy 2 Get 1 Free Promotion",
+  },
+  {
+    title: "Discount 20%",
+    description:
+      "Get a 20% discount on all purchases this weekend. Minimum purchase Rp. 50,000.",
+    imgSrc: Promo1,
+    alt: "20% Discount Promotion",
+  },
+  {
+    title: "Bundle Deal",
+    description:
+      "Purchase Ayam Woku and Ayam Rica to save 30% on the total cost.",
+    imgSrc: Promo1,
+    alt: "Bundle Deal Promotion",
+  },
+];
+
 function Promotion() {
   return (
     <div className="flex flex-col w-full h-full px-20 py-10 bg-pink-200 md:flex-row">
@@ -16,41 +39,25 @@ function Promotion() {
           </h1>
         </div>
       </div>
-      <div className="grid w-full grid-flow-row grid-cols-1 gap-4 md:w-8/12 md:grid-cols-2 lg:grid-cols-3 GambarPromo">
-        <div className="w-full overflow-hidden bg-white rounded shadow-lg h-fit">
-          <img className="w-full" src={Promo1} alt="Sunset in the mountains" />
-          <div className="px-6 py-4">
-            <div className="mb-2 text-xl font-bold text-blue-600">
-              Buy 2 Get 1
+      <div className="grid w-full grid-cols-1 gap-6 md:w-8/12 md:grid-cols-2 lg:grid-cols-3">
+        {promotions.map((promo, index) => (
+          <div
+            key={index}
+            className="w-full overflow-hidden bg-white rounded shadow-md h-fit"
+          >
+            <img
+              className="object-cover w-full"
+              src={promo.imgSrc}
+              alt={promo.alt}
+            />
+            <div className="px-6 py-4">
+              <div className="mb-2 text-xl font-bold text-blue-600">
+                {promo.title}
+              </div>
+              <p className="text-base text-gray-700">{promo.description}</p>
             </div>
-            <p className="text-base text-gray-700">
-              Buy 2 and get 1 free, applicable to select vaiants.
-            </p>
           </div>
-        </div>
-        <div className="w-full overflow-hidden bg-white rounded shadow-lg h-fit">
-          <img className="w-full" src={Promo1} alt="Sunset in the mountains" />
-          <div className="px-6 py-4">
-            <div className="mb-2 text-xl font-bold text-blue-600">
-              Discount 20%
-            </div>
-            <p className="text-base text-gray-700">
-              Get a 20% discount on all purchases this weekend. Minimum purchase
-              Rp. 50,000.
-            </p>
-          </div>
-        </div>
-        <div className="w-full overflow-hidden bg-white rounded shadow-lg h-fit">
-          <img className="w-full" src={Promo1} alt="Sunset in the mountains" />
-          <div className="px-6 py-4">
-            <div className="mb-2 text-xl font-bold text-blue-600">
-              Bundle Deal
-            </div>
-            <p className="text-base text-gray-700">
-              Purchase Ayam Woku and Ayam Rica can save 30% on the total cost.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

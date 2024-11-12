@@ -481,7 +481,7 @@ function Menu() {
         </div>
       </div>
       <div className="flex justify-center">
-        <a href="">
+        <a href="/order">
           <button className="px-4 py-2 mt-6 text-blue-600 font-bold bg-[#ffffff00] border-2 border-blue-500 rounded-md hover:bg-blue-500 hover:text-white w-fit">
             Order Now
           </button>

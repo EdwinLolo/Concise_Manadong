@@ -17,9 +17,11 @@ function Hero() {
           <p className="mt-4 text-red-500 text-md lg:text-xl">
             #NikmatnyaGaPakeRibet
           </p>
-          <button className="px-4 py-2 mt-6 text-blue-600 font-bold bg-[#ffffff00] border-2 border-blue-500 rounded-md hover:bg-blue-500 hover:text-white w-fit">
-            Order Now
-          </button>
+          <a href="/order">
+            <button className="px-4 py-2 mt-6 text-blue-600 font-bold bg-[#ffffff00] border-2 border-blue-500 rounded-md hover:bg-blue-500 hover:text-white w-fit">
+              Order Now
+            </button>
+          </a>
         </div>
       </div>
       <div className="w-full md:w-2/3 kanan">
