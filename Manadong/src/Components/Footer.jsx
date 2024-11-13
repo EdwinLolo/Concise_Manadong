@@ -11,24 +11,24 @@ import Logo from "../assets/Assets_Manadong/image 22.svg";
 function Footer() {
   return (
     <div>
-      <footer class="text-white body-font bg-[#004687]">
-        <div class="px-20 py-16 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-          <div class="w-1/2 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <footer className="text-white body-font bg-[#004687]">
+        <div className="flex flex-col flex-wrap px-20 py-16 mx-auto md:items-center lg:items-start md:flex-row md:flex-nowrap">
+          <div className="flex-shrink-0 w-1/2 mx-auto text-center md:mx-0 md:text-left">
+            <a className="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start">
               <img src={Logo} alt="Logo" className="w-44" />
             </a>
-            <p class="mt-4 text-sm text-white">
+            <p className="mt-4 text-sm text-white">
               Copyright &copy; 2023 PT Bogadong Anugerah Indonesia
             </p>
           </div>
-          <div class="flex-grow flex flex-wrap md:mt-0 mt-10 md:text-left text-center">
-            <div class="md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-whitetracking-widest text-sm mb-3">
+          <div className="flex flex-wrap flex-grow mt-10 text-center md:mt-0 md:text-left">
+            <div className="w-full px-4 md:w-1/2">
+              <h2 className="mb-3 text-sm font-medium title-font text-whitetracking-widest">
                 Contact Us
               </h2>
-              <nav class="list-none mb-10 flex-col flex gap-3">
+              <nav className="flex flex-col gap-3 mb-10 list-none">
                 <div>
-                  <a class="text-white hover:text-gray-800 cursor-pointer">
+                  <a className="text-white cursor-pointer hover:text-gray-800">
                     Email :{" "}
                     <span className="underline underline-offset-2">
                       Manadong@gmail.com
@@ -36,7 +36,7 @@ function Footer() {
                   </a>
                 </div>
                 <div>
-                  <a class="text-white hover:text-gray-800 cursor-pointer">
+                  <a className="text-white cursor-pointer hover:text-gray-800">
                     Telp :{" "}
                     <span className="underline underline-offset-2">
                       {" "}
@@ -63,23 +63,23 @@ function Footer() {
                 </div>
               </nav>
             </div>
-            <div class="md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-whitetracking-widest text-sm mb-3">
+            <div className="w-full px-4 md:w-1/2">
+              <h2 className="mb-3 text-sm font-medium title-font text-whitetracking-widest">
                 Available On
               </h2>
-              <nav class="list-none mb-10 flex flex-col gap-3">
+              <nav className="flex flex-col gap-3 mb-10 list-none">
                 <div>
-                  <a class="text-white hover:text-gray-800 cursor-pointer underline underline-offset-2">
+                  <a className="text-white underline cursor-pointer hover:text-gray-800 underline-offset-2">
                     Grab Food
                   </a>
                 </div>
                 <div>
-                  <a class="text-white hover:text-gray-800 cursor-pointer underline underline-offset-2">
+                  <a className="text-white underline cursor-pointer hover:text-gray-800 underline-offset-2">
                     GoFood
                   </a>
                 </div>
                 <div>
-                  <a class="text-white hover:text-gray-800 cursor-pointer underline underline-offset-2">
+                  <a className="text-white underline cursor-pointer hover:text-gray-800 underline-offset-2">
                     Shopee Food
                   </a>
                 </div>
